@@ -62,7 +62,12 @@ export default function Contact() {
                   <span>
                     <span className="block text-sm font-bold uppercase tracking-wider text-ink/45">Visit us</span>
                     <span className="mt-1 block font-display text-xl font-semibold text-leaf-900">{SITE.location}</span>
-                    <span className="mt-1 block text-sm text-ink/60">
+                    <span className="mt-2 block rounded-2xl bg-leaf-50 px-4 py-3 text-sm leading-relaxed text-ink/75">
+                      <strong className="text-leaf-800">Directions:</strong> Located in the beautiful
+                      environment of the Awendo–Oyani road, along Nyabera road to Uriri — right next
+                      to Ngong'a Comprehensive School.
+                    </span>
+                    <span className="mt-2 block text-sm text-ink/60">
                       Visitors are welcome by arrangement — please email ahead so we can prepare the children.
                     </span>
                   </span>

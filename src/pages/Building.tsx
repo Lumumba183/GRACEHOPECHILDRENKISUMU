@@ -12,6 +12,8 @@ const WILL_PROVIDE = [
 ];
 
 const PROGRESS_PHOTOS = [
+  { src: "/images/building-render-1.jpg", caption: "The vision: our new storey building" },
+  { src: "/images/building-render-2.jpg", caption: "Front view of the planned home" },
   { src: "/images/construction-bricks.jpg", caption: "Walls rising on Plot 361" },
   { src: "/images/construction-roof.jpg", caption: "Framing the roof" },
   { src: "/images/construction-walls.jpg", caption: "Plastering the new wing" },
@@ -92,7 +94,7 @@ export default function Building() {
             title="Every brick tells a story of hope"
             text="This is not a dream on paper. Foundations are in, walls are rising — carried by local builders, faithful friends, and the prayers of our children."
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {PROGRESS_PHOTOS.map((p, i) => (
               <Reveal key={p.src} delay={i * 90}>
                 <figure className="group relative h-72 overflow-hidden rounded-3xl shadow-soft">

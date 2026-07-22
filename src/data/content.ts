@@ -105,7 +105,7 @@ export const PROGRAMS = [
 export const TEAM = [
   { name: "Stephen Wabuko", role: "Director / CBO Awendo", image: "/images/director-vision-wall.jpg" as string | null },
   { name: "Joseph Omondi", role: "Manager", image: null as string | null },
-  { name: "Sarah Beatrice", role: "Cook", image: null as string | null },
+  { name: "Sarah Beatrice", role: "Cook", image: "/images/sarah-beatrice.jpg" as string | null },
   { name: "Cyprose Ochieng", role: "Cook", image: null as string | null },
   { name: "Viola Wabuko", role: "Staff", image: null as string | null },
 ];
@@ -213,7 +213,7 @@ export const ARTICLES: Article[] = [
     date: "July 2026",
     readTime: "4 min read",
     excerpt: "It started with a heartbreaking reality: more children need rescue than we have space to receive them. So we made a decision rooted in faith — we are going to build.",
-    image: "/images/construction-bricks.jpg",
+    image: "/images/building-render-1.jpg",
     body: [
       "It started with a simple but heartbreaking reality: more children need rescue than we have space to receive them.",
       "At Grace and Hope Children's Home, we have always said yes to a child in need. But our current facility is stretched beyond its limits. Every week, we receive calls from police officers and child welfare workers — another child with nowhere to go.",
