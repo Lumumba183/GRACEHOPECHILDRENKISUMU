@@ -228,7 +228,7 @@ export default function Home() {
 
       {/* ── BUILDING CAMPAIGN BAND ───────────────────────────── */}
       <section className="relative overflow-hidden bg-leaf-950 py-20 sm:py-28">
-        <img src="/images/construction-walls.jpg" alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
+        <img src="/images/building-render-1.jpg" alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-r from-leaf-950/95 via-leaf-950/85 to-leaf-950/60" />
         <div className="container-site relative">
           <div className="grid items-center gap-12 lg:grid-cols-2">

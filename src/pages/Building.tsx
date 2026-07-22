@@ -14,10 +14,10 @@ const WILL_PROVIDE = [
 const PROGRESS_PHOTOS = [
   { src: "/images/building-render-1.jpg", caption: "The vision: our new storey building" },
   { src: "/images/building-render-2.jpg", caption: "Front view of the planned home" },
-  { src: "/images/construction-bricks.jpg", caption: "Walls rising on Plot 361" },
-  { src: "/images/construction-roof.jpg", caption: "Framing the roof" },
-  { src: "/images/construction-walls.jpg", caption: "Plastering the new wing" },
-  { src: "/images/painting-walls.jpg", caption: "Fresh paint, fresh hope" },
+  { src: "/images/old-house.jpg", caption: "Where it all began" },
+  { src: "/images/compound-1.jpg", caption: "The home today — full to overflowing" },
+  { src: "/images/dormitory-beds.jpg", caption: "Every bed is already taken" },
+  { src: "/images/children-group-home.jpg", caption: "The family we must make room for" },
 ];
 
 export default function Building() {
@@ -27,7 +27,7 @@ export default function Building() {
         eyebrow="The Building Campaign"
         title="Help us build a home — the Storey Building Fundraiser"
         intro="We are raising $200,000 to build a new storey building on Plot Number 361 — a permanent, safe, and spacious home for 66 orphaned children."
-        image="/images/construction-bricks.jpg"
+        image="/images/building-render-1.jpg"
       />
 
       {/* Goal band */}
@@ -90,9 +90,9 @@ export default function Building() {
       <section className="bg-sand/60 py-20 sm:py-24">
         <div className="container-site">
           <SectionHead
-            eyebrow="It has already begun"
-            title="Every brick tells a story of hope"
-            text="This is not a dream on paper. Foundations are in, walls are rising — carried by local builders, faithful friends, and the prayers of our children."
+            eyebrow="Ready to break ground"
+            title="Every brick will tell a story of hope"
+            text="This is not a dream on paper. The land on Plot 361 is secured and the architectural drawings are complete — now we are trusting God for the resources to break ground, carried by the prayers of our children."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {PROGRESS_PHOTOS.map((p, i) => (
@@ -124,7 +124,7 @@ export default function Building() {
             text="Give through any of these channels and mention 'Building Fund' — or simply give, and tell us where your heart is."
           />
           <div className="mt-12">
-            <PaymentMethods />
+            <PaymentMethods buildingAccount />
           </div>
           <Reveal className="mt-10 text-center">
             <p className="text-sm text-ink/60">
@@ -135,7 +135,7 @@ export default function Building() {
       </section>
 
       <DonateBanner
-        title="Be part of the miracle on Plot 361"
+        title="Be part of God's work of blessing orphans on Plot 361"
         text="Every brick you fund is a life changed. Join us — give today."
       />
     </>

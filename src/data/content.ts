@@ -104,10 +104,10 @@ export const PROGRAMS = [
 
 export const TEAM = [
   { name: "Stephen Wabuko", role: "Director / CBO Awendo", image: "/images/director-vision-wall.jpg" as string | null },
-  { name: "Joseph Omondi", role: "Manager", image: null as string | null },
+  { name: "Joseph Omondi", role: "Manager", image: "/images/joseph-omondi.jpg" as string | null },
   { name: "Sarah Beatrice", role: "Cook", image: "/images/sarah-beatrice.jpg" as string | null },
   { name: "Cyprose Ochieng", role: "Cook", image: null as string | null },
-  { name: "Viola Wabuko", role: "Staff", image: null as string | null },
+  { name: "Viola Wabuko", role: "Staff", image: "/images/viola-wabuko.jpg" as string | null },
 ];
 
 export const VALUES = [
@@ -129,13 +129,13 @@ export const URGENT_NEEDS = [
     icon: "BookOpen",
     title: "School Supplies",
     text: "Exercise books and pens, textbooks and learning materials, school bags and uniforms — everything a child needs to stay in class.",
-    image: "/images/books-donation.jpg",
+    image: "/images/school-supplies-drive.jpg",
   },
   {
     icon: "HeartPulse",
     title: "Medical Care",
     text: "Some children arrive requiring urgent medical treatment. Funds for doctor visits, medication, and hospital care are always needed.",
-    image: "/images/children-drinking.jpg",
+    image: "/images/eye-clinic.jpg",
   },
   {
     icon: "Shirt",
@@ -147,7 +147,7 @@ export const URGENT_NEEDS = [
     icon: "Building2",
     title: "Building Expansion",
     text: "We urgently need to expand our facility to accommodate more children who need rescue.",
-    image: "/images/construction-walls.jpg",
+    image: "/images/building-render-1.jpg",
   },
 ];
 
@@ -219,8 +219,8 @@ export const ARTICLES: Article[] = [
       "At Grace and Hope Children's Home, we have always said yes to a child in need. But our current facility is stretched beyond its limits. Every week, we receive calls from police officers and child welfare workers — another child with nowhere to go.",
       "So we made a decision rooted in faith: we are going to build.",
       "Our goal is to construct a new storey building on Plot 361 — large enough to safely and comfortably house 66 orphaned and vulnerable children. A place with space to sleep, to study, to eat, to grow.",
-      "We are believing God for $200,000 to make this building a reality. And we are inviting you to be part of this miracle. Every dollar you give is matched. Every brick you fund is a life changed.",
-      "The foundations are already going in. Brick by brick, wall by wall, the dream is taking shape — carried by the hands of local builders and the prayers of our children.",
+      "We are believing God for $200,000 to make this building a reality. And we are inviting you to be part of God's work of blessing orphans. Every dollar you give is matched. Every brick you fund is a life changed.",
+      "The land is secured on Plot 361 and the architectural drawings are complete. Every detail has been planned with care — now we are trusting God for the resources to break ground, carried forward by the prayers of our children.",
       "This building is not just a structure. It is a statement — that these children matter, that they are seen, and that they will not be forgotten.",
       "Join us. Give today.",
     ],
@@ -323,5 +323,5 @@ export const GALLERY = [
   { src: "/images/study-night.jpg", caption: "Evening study in the library" },
   { src: "/images/kitchen-children.jpg", caption: "Outside the God Is Gracious Kitchen" },
   { src: "/images/dormitory-beds.jpg", caption: "A bed for every child" },
-  { src: "/images/construction-roof.jpg", caption: "The new building rises" },
+  { src: "/images/building-render-2.jpg", caption: "The dream: our new storey building" },
 ];

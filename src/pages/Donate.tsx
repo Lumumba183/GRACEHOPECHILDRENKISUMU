@@ -134,7 +134,7 @@ export default function Donate() {
         <div className="container-site">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl bg-leaf-900 p-10 sm:p-14">
-              <img src="/images/construction-bricks.jpg" alt="" className="absolute inset-0 h-full w-full object-cover opacity-20" loading="lazy" />
+              <img src="/images/building-render-2.jpg" alt="" className="absolute inset-0 h-full w-full object-cover opacity-20" loading="lazy" />
               <div className="relative flex flex-wrap items-center justify-between gap-8">
                 <div className="max-w-xl">
                   <p className="eyebrow !text-sun-300">Also open: the Building Fund</p>

@@ -6,8 +6,18 @@ import Reveal from "./Reveal";
 const METHOD_ICONS: Record<string, typeof Smartphone> = {
   mpesa: Smartphone,
   bank: Landmark,
+  coop: Landmark,
   paypal: Globe,
   remittance: Send,
+};
+
+const BUILDING_METHOD = {
+  id: "coop",
+  name: "Co-op Bank — Building Fund",
+  badge: "Building Fund",
+  detail: "ACC: 01101451820001",
+  copyValue: "01101451820001",
+  note: "Dedicated account for the Storey Building Fund. Account name: Grace and Hope Children's Home.",
 };
 
 function MethodCard({ method, index }: { method: (typeof DONATE_METHODS)[number]; index: number }) {
@@ -59,11 +69,27 @@ function MethodCard({ method, index }: { method: (typeof DONATE_METHODS)[number]
   );
 }
 
-export default function PaymentMethods() {
+export default function PaymentMethods({ buildingAccount = false }: { buildingAccount?: boolean }) {
+  const methods = buildingAccount ? [BUILDING_METHOD, ...DONATE_METHODS] : DONATE_METHODS;
   return (
     <div>
+      {buildingAccount && (
+        <Reveal>
+          <div className="mb-8 rounded-3xl border-2 border-leaf-700 bg-leaf-900 p-6 text-center shadow-lift sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-sun-300">
+              Preferred for the Building Fund
+            </p>
+            <p className="mt-2 font-display text-2xl font-semibold text-cream sm:text-3xl">
+              Co-op Bank &nbsp;·&nbsp; ACC: 01101451820001
+            </p>
+            <p className="mt-2 text-sm text-cream/70">
+              A separate account dedicated 100% to the Storey Building Fund on Plot 361.
+            </p>
+          </div>
+        </Reveal>
+      )}
       <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-        {DONATE_METHODS.map((m, i) => (
+        {methods.map((m, i) => (
           <MethodCard key={m.id} method={m} index={i} />
         ))}
       </div>
