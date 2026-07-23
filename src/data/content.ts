@@ -33,7 +33,7 @@ export const DONATE_METHODS = [
     badge: "Bank Transfer",
     detail: "ACC: 01503217409300",
     copyValue: "01503217409300",
-    note: "Account name: Grace and Hope Children's Home.",
+    note: "Account name: Stephen Onyango Wabuko.",
   },
   {
     id: "paypal",

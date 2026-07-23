@@ -17,7 +17,7 @@ const BUILDING_METHOD = {
   badge: "Building Fund",
   detail: "ACC: 01101451820001",
   copyValue: "01101451820001",
-  note: "Dedicated account for the Storey Building Fund. Account name: Grace and Hope Children's Home.",
+  note: "Dedicated account for the Storey Building Fund. Account name: Stephen Onyango Wabuko.",
 };
 
 function MethodCard({ method, index }: { method: (typeof DONATE_METHODS)[number]; index: number }) {
