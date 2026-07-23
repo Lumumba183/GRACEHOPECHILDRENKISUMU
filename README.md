@@ -64,11 +64,12 @@ Steps:
    (deploy log should show `commandOrigin: config` and `publishOrigin: config`).
 3. Deploy — the build creates `dist/` automatically and the SPA redirect rule keeps
    every route (`/about`, `/donate`, `/stories/...`) working.
-4. Point the custom domain **www.graceandhopekenya.org** at the site in
+4. Point the custom domain **www.gracenhopehome.org** at the site in
    **Site settings → Domain management** and enable HTTPS.
 
 ## 📬 Contact
 
+- Phone: +254 718 572 537 · +254 704 769 555
 - Email: gracehope647@gmail.com
 - Facebook: Grace and Hope Children's Home
 - Location: Nyabera Got Village, Awendo, Kenya

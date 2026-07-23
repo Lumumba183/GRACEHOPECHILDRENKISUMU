@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Facebook, Heart, Mail, MapPin } from "lucide-react";
+import { Facebook, Heart, Mail, MapPin, Phone } from "lucide-react";
 import Logo from "./Logo";
 import { SITE } from "../data/content";
 
@@ -64,6 +64,16 @@ export default function Footer() {
                 <a href={`mailto:${SITE.email}`} className="text-cream/75 transition-colors hover:text-sun-300">
                   {SITE.email}
                 </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-sun-400" />
+                <span className="text-cream/75">
+                  {SITE.phones.map((p) => (
+                    <a key={p.link} href={`tel:${p.link}`} className="block transition-colors hover:text-sun-300">
+                      {p.display}
+                    </a>
+                  ))}
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Facebook className="mt-0.5 h-4 w-4 shrink-0 text-sun-400" />

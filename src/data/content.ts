@@ -8,7 +8,11 @@ export const SITE = {
   facebookUrl: "https://www.facebook.com/search/top?q=Grace%20and%20Hope%20Children%27s%20Home",
   whatsapp: "+254718572537",
   whatsappDisplay: "+254 718 572 537",
-  website: "www.graceandhopekenya.org",
+  phones: [
+    { display: "+254 718 572 537", link: "+254718572537" },
+    { display: "+254 704 769 555", link: "+254704769555" },
+  ],
+  website: "www.gracenhopehome.org",
 };
 
 export const waLink = (text: string) =>
@@ -103,10 +107,10 @@ export const PROGRAMS = [
 ];
 
 export const TEAM = [
-  { name: "Stephen Wabuko", role: "Director / CBO Awendo", image: "/images/director-vision-wall.jpg" as string | null },
+  { name: "Stephen Wabuko", role: "Director / CBO Awendo", image: "/images/stephen-wabuko.jpg" as string | null },
   { name: "Joseph Omondi", role: "Manager", image: "/images/joseph-omondi.jpg" as string | null },
   { name: "Sarah Beatrice", role: "Cook", image: "/images/sarah-beatrice.jpg" as string | null },
-  { name: "Cyprose Ochieng", role: "Cook", image: null as string | null },
+  { name: "Cyprose Ochieng", role: "Cook", image: "/images/cyprose-ochieng.jpg" as string | null },
   { name: "Viola Wabuko", role: "Staff", image: "/images/viola-wabuko.jpg" as string | null },
 ];
 
@@ -313,15 +317,40 @@ export const ARTICLES: Article[] = [
       "Projects like this are what your giving builds: not handouts, but foundations. Brick by brick, tank by tank, book by book — a childhood rebuilt.",
     ],
   },
+  {
+    slug: "our-poultry-project",
+    title: "More Than Eggs: The Little Poultry House Behind Our Home",
+    category: "Our Work",
+    date: "July 2026",
+    readTime: "3 min read",
+    excerpt: "Behind our dormitories stands a small wooden house with a hand-painted sign: POULTRY. Inside is one of the hardest-working projects on our compound.",
+    image: "/images/poultry-house.jpg",
+    body: [
+      "If you walk behind the dormitories at Grace and Hope Children's Home, you will find a small wooden house with a hand-painted sign: POULTRY. It may not look like much from the outside — but inside is one of the hardest-working projects on our compound.",
+      "The chickens we raise do three important jobs for our home. First, they put food on the table. Fresh, protein-rich eggs go straight into the children's meals — the kind of nutrition that growing bodies and learning minds need every single day.",
+      "Second, they teach. Caring for the flock — feeding, watering, collecting eggs, and keeping the house clean — is part of the daily rhythm for our older children. Responsibility, patience, and practical farming skills are lessons no classroom can fully give.",
+      "Third, they sustain. Surplus eggs and birds are sold within the community around Awendo, and every shilling earned goes straight back into the care of the children. It is a small but meaningful step toward the home standing on its own feet.",
+      "Self-reliance has been part of our DNA from the very beginning — from the days of training women and youth to make bead-work, detergents and food items to sell. The poultry house is that same belief alive today: with God's blessing, little things grow.",
+      "If you would like to help us expand the flock — more birds, better feed, a bigger house — your gift toward this project will be put to work immediately.",
+    ],
+    quote: { text: "With God's blessing, little things grow.", author: "Grace and Hope Children's Home" },
+  },
 ];
 
 export const GALLERY = [
   { src: "/images/children-group-home.jpg", caption: "Our family in front of the home" },
   { src: "/images/children-joy-cups.jpg", caption: "Porridge time smiles" },
+  { src: "/images/celebration-balloons.jpg", caption: "Celebration day — balloons up, hearts full" },
   { src: "/images/meal-queue.jpg", caption: "Lunch is served" },
+  { src: "/images/celebration-cake.jpg", caption: "Cake for every child" },
   { src: "/images/new-dresses.jpg", caption: "New clothes day" },
+  { src: "/images/celebration-speech.jpg", caption: "A word of encouragement before the feast" },
   { src: "/images/study-night.jpg", caption: "Evening study in the library" },
+  { src: "/images/kitchen-chapati.jpg", caption: "Chapati morning in the kitchen" },
   { src: "/images/kitchen-children.jpg", caption: "Outside the God Is Gracious Kitchen" },
+  { src: "/images/celebration-hall.jpg", caption: "The whole family gathered" },
+  { src: "/images/celebration-treat.jpg", caption: "Chapati and soda — a special treat" },
   { src: "/images/dormitory-beds.jpg", caption: "A bed for every child" },
+  { src: "/images/phoebe-thankyou.jpg", caption: "Phoebe's thank-you to every supporter" },
   { src: "/images/building-render-2.jpg", caption: "The dream: our new storey building" },
 ];

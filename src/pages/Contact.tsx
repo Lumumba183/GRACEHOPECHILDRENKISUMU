@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Facebook, Mail, MapPin, Send } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone, Send } from "lucide-react";
 import Reveal from "../components/Reveal";
 import { DonateBanner, PageHero } from "../components/Shared";
 import { SITE } from "../data/content";
@@ -42,7 +42,28 @@ export default function Contact() {
                   </span>
                 </a>
               </Reveal>
-              <Reveal delay={100}>
+              <Reveal delay={80}>
+                <div className="card-soft flex items-start gap-5 p-7">
+                  <span className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-leaf-700 p-3.5 text-cream">
+                    <Phone className="h-6 w-6" />
+                  </span>
+                  <span>
+                    <span className="block text-sm font-bold uppercase tracking-wider text-ink/45">Call us</span>
+                    <span className="mt-1 block font-display text-xl font-semibold text-leaf-900">
+                      {SITE.phones.map((p, i) => (
+                        <span key={p.link}>
+                          {i > 0 && <span className="mx-2 text-ink/30">·</span>}
+                          <a href={`tel:${p.link}`} className="transition-colors hover:text-leaf-600">{p.display}</a>
+                        </span>
+                      ))}
+                    </span>
+                    <span className="mt-1 block text-sm text-ink/60">
+                      Our lines are open — call about giving, visiting, or partnering with the home.
+                    </span>
+                  </span>
+                </div>
+              </Reveal>
+              <Reveal delay={140}>
                 <a href={SITE.facebookUrl} target="_blank" rel="noreferrer" className="card-soft group flex items-start gap-5 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
                   <span className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-leaf-700 p-3.5 text-cream">
                     <Facebook className="h-6 w-6" />
@@ -54,7 +75,7 @@ export default function Contact() {
                   </span>
                 </a>
               </Reveal>
-              <Reveal delay={200}>
+              <Reveal delay={220}>
                 <div className="card-soft flex items-start gap-5 p-7">
                   <span className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-leaf-700 p-3.5 text-cream">
                     <MapPin className="h-6 w-6" />
@@ -73,7 +94,7 @@ export default function Contact() {
                   </span>
                 </div>
               </Reveal>
-              <Reveal delay={280}>
+              <Reveal delay={300}>
                 <div className="overflow-hidden rounded-3xl shadow-soft">
                   <img src="/images/compound-3.jpg" alt="The Grace and Hope compound" className="h-64 w-full object-cover" loading="lazy" />
                 </div>
